@@ -1,0 +1,9 @@
+# Display spaces using in a bar that accepts stdout
+chunkc=/usr/local/bin/chunkc
+
+
+# get active and previous space
+active=$($chunkc tiling::query --desktop id)
+total=$($chunkc tiling::query --desktops-for-monitor 1 | tail -c 1)
+
+echo "$($chunkc tiling::query --desktop mode)@$total@$active"

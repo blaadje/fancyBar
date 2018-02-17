@@ -1,0 +1,129 @@
+table, span {
+    color: #268bd2;
+    font: 12px SFMono-Medium;
+    text-transform: lowercase;
+    -webkit-font-smoothing: antialiased;
+}
+.white {
+    color: #7B8787;}
+
+.black {
+  color: #fff7e4;
+}
+
+.background {
+    background-color: #fff7e4;
+}
+
+.red {
+    color: #dc322f;
+}
+
+.purple {
+    color: #6c71c4;
+}
+
+.orange {
+    color: #cb4b16;
+}
+.orangebg {
+    background: #cb4b16;
+    color: #7B8787;
+}
+
+.yellow {
+    color: #b58900;
+}
+
+.yellowbg {
+    background: #b58900;
+    color: #7B8787;
+}
+
+.green {
+    color: #859900;
+}
+
+.greenbg {
+    background: #859900;
+    color: #7B8787;
+}
+
+.bluebg {
+    background: #268bd2;
+    color: #7B8787;
+}
+
+.cyan {
+    color: #2aa198;
+}
+
+.cyanbg {
+    background: #2aa198;
+    color: #7B8787;
+}
+
+.blue {
+    color: #268bd2;
+}
+
+.teal {
+    color: #5699af;
+}
+
+.sicon {
+    position: relative;
+    font: 10px FontAwesome;
+}
+.icon {
+    position: relative;
+    top: 1px;
+    font: 14px FontAwesome;
+}
+.weather {
+    font: 16px WeatherIcons-Regular;
+    position: relative;
+    top: 2px;
+}
+
+.vol_icon {
+   position: relative;
+   font: 18px FontAwesome;
+}
+
+.grey {
+    color: #7b8787;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+       width: 140px;
+      -webkit-appearance: none;
+      background-color: #7b8787;
+    }
+    input[type='range']::-webkit-slider-thumb {
+      overflow: visible;
+      width: 16px;
+      -webkit-appearance: none;
+      height: 16px;
+      /* border-radius: 8px; */
+      top: 10px
+      cursor: ew-resize;
+      background: #e8d8ca;
+      box-shadow: -140px 0 0 140px;
+      color: #268bd2;
+      margin-top: -4.5px;
+      z-index: 99;
+    }
+    input[type=range]:focus{
+      outline: none
+    }
+    input[type=range]::-webkit-slider-runnable-track{
+      width: 100%;
+      height: 8px;
+      overflow: visible;
+      cursor: ew-resize;
+}
+}
+
