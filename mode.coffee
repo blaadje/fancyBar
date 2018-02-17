@@ -1,6 +1,6 @@
 command: "sh ./scripts/screens"
 
-refreshFrequency: 3000 # ms
+refreshFrequency: 2000 # ms
 
 render: (output) ->
   """
@@ -23,15 +23,13 @@ update: (output, domEl) ->
   file = ""
   screenhtml = ""
   mode = values[0]
-  active = parseInt(values[1], 10)
-  total = parseInt(values[2], 10)
-  win = ""
+  total = parseInt(values[1])
+  active = parseInt(values[2])
 
   #apply a proper number tag so that space change controls can be added
-  
-  for i in [0..total]
-    # the active space has a closing paren aroound the name
-    if i == active 
+
+  for i in [1..total]
+    if i == active
       screenhtml += "<span class='icon screen#{i}'>&nbsp&nbsp</span>"
     else
       screenhtml += "<span class='icon white screen#{i}'>&nbsp&nbsp</span>"

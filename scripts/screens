@@ -3,7 +3,7 @@ chunkc=/usr/local/bin/chunkc
 
 
 # get active and previous space
-active=$($chunkc tiling::query --desktop id)
+active=$($chunkc tiling::query -d id)
 total=$($chunkc tiling::query --desktops-for-monitor 1 | tail -c 1)
 
 echo "$($chunkc tiling::query --desktop mode)@$total@$active"
