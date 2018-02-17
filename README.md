@@ -1,6 +1,9 @@
 # Bars
 
-Personal [Übersicht](http://tracesof.net/uebersicht/) system information bars for use with [Kwm](https://github.com/koekeishiya/kwm) window manager and designed with colors from the AVK theme, though there are other color schemes in the color folder.
+Personal [Übersicht](http://tracesof.net/uebersicht/) system information bars for use with [chunkwm](https://github.com/koekeishiya/chunkwm) Window manager and designed with colors from the soloarized theme, though there are other color schemes in the color folder.
+
+The older version based on [kwm](https://github.com/koekeishiya/kwm) can be
+found [here](https://github.com/apierz/nerdbar.widget).
 
 *Screen Shots:*
 ![img](https://github.com/apierz/nerdbar.widget/blob/master/screens/screenshotone.png?raw=true)
