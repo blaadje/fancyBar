@@ -88,7 +88,7 @@ Make sure you have [Übersicht](http://tracesof.net/uebersicht/) installed.
 Then clone this repository.
 
 ```bash
-git clone https://github.com/apierz/nerdbar.widget $HOME/Library/Application\ Support/Übersicht/widgets/nerdbar.widget
+git clone https://github.com/apierz/chunkbar.widget $HOME/Library/Application\ Support/Übersicht/widgets/chunkbar.widget
 ```
 
 or to your current widget directory if you have changed it.
@@ -101,3 +101,14 @@ The icons require the use of extra fonts:
 * [All-the-icons](https://github.com/domtronn/all-the-icons.el) for the weather icons.
 
 That have to be installed system wide. You can drag the files into FontBook.app to do this.
+
+## Troubleshooting
+
+### It says it can't find the scripts!
+
+If your widgets look like this:
+![something is amiss](https://user-images.githubusercontent.com/31190088/36876302-403f83f8-1dac-11e8-9887-7b4ca8858891.png)
+
+Some people have problems with the scripts using relative paths, but I haven't been able to reproduce it to figure out what to fix. If you go into the individual coffee files and replace the `./scripts/scriptname` path with an absolute path like `/Users/You/YourWidgetFolder/scripts/scriptname` that should fix things.
+
+If anyone sees this and knows what I'm doing wrong with the relative paths, please let me know.
