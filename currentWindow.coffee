@@ -55,5 +55,5 @@ update: (output, domEl) ->
     win = "<span class='white'>…</span>"
 
 
-  $(domEl).find('.kwmmode').html("<span class='icon'></span> " +
+  $(domEl).find('.kwmmode').html("<span class='ricon'></span> " +
                                  "<span>#{win}</span><span class='white'>#{file}</span>")

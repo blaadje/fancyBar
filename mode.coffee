@@ -32,7 +32,7 @@ update: (output, domEl) ->
     if i == active
       screenhtml += "<span class='icon screen#{i}'>&nbsp&nbsp</span>"
     else
-      screenhtml += "<span class='icon white screen#{i}'>&nbsp&nbsp</span>"
+      screenhtml += "<span class='ricon white screen#{i}'>&nbsp&nbsp</span>"
 
   #display the html string
   $(domEl).find('.kwmmode').html("<span class='tilingMode icon'></span>" +

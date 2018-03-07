@@ -75,10 +75,15 @@ table, span {
     position: relative;
     font: 10px FontAwesome;
 }
+.ricon {
+    position: relative;
+    top: 1px;
+    font: 14px FontAwesome5FreeRegular;
+}
 .icon {
     position: relative;
     top: 1px;
-    font: 14px FontAwesome;
+    font: 14px FontAwesome5FreeSolid;
 }
 .weather {
     font: 16px WeatherIcons-Regular;
@@ -88,11 +93,15 @@ table, span {
 
 .vol_icon {
    position: relative;
-   font: 18px FontAwesome;
+   font: 18px FontAwesome5FreeSolid;
 }
 
 .grey {
-    color: #4F5B66";
+    color: #4F5B66;
+}
+
+.battery {
+    color: #c0c5ce;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {

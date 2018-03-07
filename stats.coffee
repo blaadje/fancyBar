@@ -33,7 +33,7 @@ getMem: (mem) ->
   memString = String(memNum)
   if memNum < 10
     memString = '0' + memString
-  return "<span class='icon'>&nbsp</span>" +
+  return "<span class='ricon'>&nbsp</span>" +
          "<span class='white'>#{memString}%</span>"
 
 convertBytes: (bytes) ->
@@ -49,10 +49,10 @@ usageFormat: (kb) ->
 getNetTraffic: (down, up) ->
   downString = @convertBytes(parseInt(down))
   upString = @convertBytes(parseInt(up))
-  return "<span>&nbsp</span><span class='icon blue'></span>" +
+  return "<span>&nbsp</span><span class='ricon cyan'></span>" +
          "<span class='white'>#{downString} " +
          "<span class='cyan'> ⎢</span> <span> </span>" +
-         "<span class='icon orange'></span>" +
+         "<span class='ricon red'></span>" +
          "<span class='white'>#{upString}</span>"
 
 getFreeSpace: (space) ->

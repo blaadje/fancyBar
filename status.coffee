@@ -18,7 +18,7 @@ style: """
     position: relative
     left: 10px
   .charging
-    font: 12px FontAwesome
+    font: 13px FontAwesome
     position: relative
     top: 0px
     right: -11px
@@ -60,11 +60,11 @@ getWifiStatus: (status, netName, netIP) ->
     return "<span class='grey wifi'>&nbsp&nbsp&nbsp</span><span class='white'>--&nbsp&nbsp&nbsp</span>"
 
 getMailCount: (count) ->
-  return "<span class='icon'></span><span class=white>#{count}</span>"
+  return "<span class='ricon'></span><span class=white>#{count}</span>"
 
 getReminders: (reminders) ->
-  return "<span class='reminders'><span class='icon'></span></span><span class='white'>#{reminders}&nbsp</span>"
-  
+  return "<span class='reminders'><span class='ricon'></span></span><span class='white'>#{reminders}&nbsp</span>"
+
 
 update: (output, domEl) ->
 
