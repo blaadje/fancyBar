@@ -24,7 +24,7 @@ getCPU: (cpu) ->
   cpuString = String(cpuNum)
   if cpuNum < 10
     cpuString = '0' + cpuString
-  return "<span class='icon'>&nbsp</span>" +
+  return "<span class='ricon'>&nbsp</span>" +
          "<span class='white'>#{cpuString}%</span>"
 
 getMem: (mem) ->
@@ -56,7 +56,7 @@ getNetTraffic: (down, up) ->
          "<span class='white'>#{upString}</span>"
 
 getFreeSpace: (space) ->
-  return "<span class='icon'></span><span class='white'>#{space}gb</span>"
+  return "<span class='ricon'></span><span class='white'>#{space}gb</span>"
 
 update: (output, domEl) ->
 

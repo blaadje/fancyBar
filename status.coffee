@@ -26,7 +26,7 @@ style: """
   """
 timeAndDate: (date, time) ->
   # returns a formatted html string with the date and time
-  return "<span class='white'><span class='icon'>&nbsp</span>#{date}&nbsp<span class='icon'></span>#{time}</span></span>";
+  return "<span class='white'><span class='ricon'>&nbsp</span>#{date}&nbsp<span class='ricon'></span>#{time}</span></span>"
 
 batteryStatus: (battery, state) ->
   #returns a formatted html string current battery percentage, a representative icon and adds a lighting bolt if the

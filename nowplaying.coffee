@@ -19,7 +19,7 @@ style: """
   cursor: pointer;
   .torrentStatus
     position: relative
-    bottom: 15px
+    bottom: 17px
 """
 
 cutWhiteSpace: (text) ->
@@ -74,14 +74,14 @@ update: (output, domEl) ->
    mpdHtmlString += "</span>"
 
    if artist != ""
-     mpdHtmlString += "<span class='sicon prev'>&nbsp&nbsp</span>" + " "
+     mpdHtmlString += "<span class='icon prev'>&nbsp&nbsp</span>" + " "
 
      if status == "[playing]"
-        mpdHtmlString += "<span class='sicon pause'></span>" + " "
+        mpdHtmlString += "<span class='icon pause'></span>" + " "
      else
-        mpdHtmlString += "<span class='sicon play'></span>" + " "
+        mpdHtmlString += "<span class='icon play'></span>" + " "
 
-     mpdHtmlString += "<span class='sicon next'></span>"
+     mpdHtmlString += "<span class='icon next'></span>"
 
 
 

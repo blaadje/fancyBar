@@ -8,9 +8,9 @@ render: (output) ->
     <div class='volumeicon'></div>
   """
 
-style: 
+style:
   """
-  bottom: 10px
+  bottom: 8px
   left 773px
   """
 
@@ -26,7 +26,7 @@ update: (output, domEl) ->
   if muted == "false"
     if volume < 25
         htmlstring += ""
-    if volume >= 25 and volume <= 75 
+    if volume >= 25 and volume <= 75
         htmlstring += ""
     if volume > 75
         htmlstring += ""
