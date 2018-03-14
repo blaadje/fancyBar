@@ -1,74 +1,74 @@
 table, span {
-    color: #d08770;
+    color: #cb4b16;
     font: 12px SFMono-Medium;
     text-transform: lowercase;
     -webkit-font-smoothing: antialiased;
 }
 .white {
-    color: #c0c5ce;}
+    color: #7B8787;}
 
 .black {
-  color: #2f3841;
+  color: #fdf6e3;
 }
 
 .background {
-    background-color: #2f3841;
+    background-color: #fdf6e3;
 }
 
 .red {
-    color: #bf616A;
+    color: #dc322f;
 }
 
 .purple {
-    color: #b48ead;
+    color: #6c71c4;
 }
 
 .orange {
-    color: #d08770;
+    color: #cb4b16;
 }
 .orangebg {
-    background: #d08770;
-    color: #c0c5ce;
+    background: #cb4b16;
+    color: #7B8787;
 }
 
 .yellow {
-    color: #ecbe7b;
+    color: #b58900;
 }
 
 .yellowbg {
-    background: #ecbe7b;
-    color: #c0c5ce;
+    background: #b58900;
+    color: #7B8787;
 }
 
 .green {
-    color: #a3be8c;
+    color: #859900;
 }
 
 .greenbg {
-    background: #a3be8c;
-    color: #c0c5ce;
+    background: #859900;
+    color: #7B8787;
 }
 
 .bluebg {
-    background: #8fa1b3;
-    color: #c0c5ce;
+    background: #268bd2;
+    color: #7B8787;
 }
 
 .cyan {
-    color: #46d9ff;
+    color: #2aa198;
 }
 
 .cyanbg {
-    background: #46d9ff;
-    color: #c0c5ce;
+    background: #2aa198;
+    color: #7B8787;
 }
 
 .blue {
-    color: #8fa1b3;
+    color: #268bd2;
 }
 
 .teal {
-    color: #4db5db;
+    color: #5699af;
 }
 
 .sicon {
@@ -101,7 +101,7 @@ table, span {
 }
 
 .battery {
-    color: #c0c5ce;
+    color: #7B8787;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -109,7 +109,7 @@ table, span {
       overflow: hidden;
        width: 140px;
       -webkit-appearance: none;
-      background-color: #4f5b66;
+      background-color: #93a1a1;
     }
     input[type='range']::-webkit-slider-thumb {
       overflow: visible;
@@ -119,9 +119,9 @@ table, span {
       /* border-radius: 8px; */
       top: 10px
       cursor: ew-resize;
-      background: #c0c5ce;
+      background: #586e75;
       box-shadow: -140px 0 0 140px;
-      color: #d08770;
+      color: #859900;
       margin-top: -4.5px;
       z-index: 99;
     }

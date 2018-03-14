@@ -10,7 +10,7 @@ render: (output) ->
 
 style: """
   right: 18px
-  bottom: 11px
+  bottom: 10px
   color: #66d9ef
   height: 13
 """
