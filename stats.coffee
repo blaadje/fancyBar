@@ -46,7 +46,7 @@ usageFormat: (kb) ->
       return "0.00mb"
     return "#{parseFloat(mb.toFixed(2))}MB"
 
-getNetTraffic: (down, up) ->
+getNetTraffic: (up, down) ->
   downString = @convertBytes(parseInt(down))
   upString = @convertBytes(parseInt(up))
   return "<span>&nbsp</span><span class='ricon cyan'></span>" +

@@ -23,7 +23,7 @@ style: """
     top: 0px
     width: 8em
     right: 50px
-    background-color: #2f3841;
+    background-color: #fdf6e3;
     opacity: 0
     position: relative
     border-radius: 4px
