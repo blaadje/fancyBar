@@ -22,7 +22,7 @@ update: (output, domEl) ->
 
   file = ""
   screenhtml = ""
-  mode = values[0]
+  mode = values[0].replace /^\s+|\s+$/g, ""
   total = parseInt(values[1])
   active = parseInt(values[2])
 
