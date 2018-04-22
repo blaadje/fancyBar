@@ -1,8 +1,12 @@
 chunkc=/usr/local/bin/chunkc
 
+sleep 0.05
 active=$($chunkc tiling::query -d id)
-sleep 0.25
+sleep 0.05
 total=$($chunkc tiling::query -D 1 | tail -c 1)
-sleep 0.25
+sleep 0.05
+current=$($chunkc tiling::query --window name)
+sleep 0.05
+mode=$($chunkc tilin::query-d mode)
 
-echo "$($chunkc tiling::query -d mode)@$total@$active"
+echo "$mode@$total@$active@$current"
