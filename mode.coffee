@@ -25,12 +25,20 @@ getAppIcon: (app) ->
         return "<span class='bicon'>&nbsp</span>"
     if app == 'spark'
         return "<span class='bicon'>&nbsp</span>"
+    if app == 'messages'
+        return "<span class='icon'></span>"
     if app == 'bear'
         return "<span class='icon'></span>"
+    if app == 'iterm2'
+        return "<span class='icon'></span>"
+    if app == '1password'
+        return "<span class='icon'></span>"
+    if app == 'system preferences'
+        return "<span class='icon'></span>"
     if app == 'pcalc'
         return "<span class='icon'></span>"
     if app == 'spotify'
-        return "<span class='bicon'>&nbsp</span>"
+        return "<span class='bicon'>&nbsp</span><span> spotify</span>"
     else
       return "<span class='ricon'>&nbsp</span><span>#{app}&nbsp</span>"
 
@@ -53,7 +61,7 @@ trimWindowName: (path) ->
         while j >= 1
             j -= 1
             if (win + file).length >= 65
-                win = '…/' + win
+                win = ' …/' + win
                 break
             else
                 win = winseg[j] + '/' + win

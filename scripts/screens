@@ -7,4 +7,4 @@ sleep 2.00
 mode=$($chunkc tiling::query -d mode)
 spacesout=$($spaces)
 
-echo "$mode@${spacesout: -1}@${spaceout:-3:1}@$(sh ./scripts/activeWindow.sh)"
+echo "$mode@${spacesout: -1}@${spacesout: -3:1}@$(sh ./scripts/activeWindow.sh)"
