@@ -16,6 +16,24 @@ style: """
   cursor: pointer;
 """
 
+getAppIcon: (app) ->
+
+    app = app.replace /^\s+/g, ""
+    app = app.toLowerCase()
+
+    if app == 'firefox'
+        return "<span class='bicon'>&nbsp</span>"
+    if app == 'spark'
+        return "<span class='bicon'>&nbsp</span>"
+    if app == 'bear'
+        return "<span class='icon'></span>"
+    if app == 'pcalc'
+        return "<span class='icon'></span>"
+    if app == 'spotify'
+        return "<span class='bicon'>&nbsp</span>"
+    else
+      return "<span class='ricon'>&nbsp</span><span>#{app}&nbsp</span>"
+
 trimWindowName: (path) ->
 
     file = ""
@@ -64,9 +82,11 @@ update: (output, domEl) ->
   file = ""
   screenhtml = ""
   mode = values[0].replace /^\s+|\s+$/g, ""
-  total = parseInt(values[1])
-  active = parseInt(values[2])
-  current = values[3]
+  active = parseInt(values[1])
+  total = parseInt(values[2])
+  activeWindow = values[3].split(',')
+  app = activeWindow[0]
+  title = activeWindow[1]
 
   #apply a proper number tag so that space change controls can be added
 
@@ -78,12 +98,12 @@ update: (output, domEl) ->
 
   #display the html string
   $(domEl).find('.kwmmode').html("<span class='tilingMode icon'></span>" +
-                                 "<span class='tilingMode white'>[#{mode}] " +
+                                 "<span class='tilingMode white'>[#{mode}]" +
                                  "<span class='cyan'> ⎢ </span></span>" +
                                  screenhtml +
-                                 "<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>" +
-                                 "<span class='ricon'></span>" +
-                                 @trimWindowName(current))
+                                 "<span>&nbsp&nbsp&nbsp&nbsp&nbsp</span>" +
+                                 @getAppIcon(app) +
+                                 @trimWindowName(title))
 
   # add screen changing controls to the screen icons
   # $(".screen1").on 'click', => @run "osascript -e 'tell application \"System Events\" to key code 18 using control down'"

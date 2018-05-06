@@ -75,6 +75,11 @@ table, span {
     position: relative;
     font: 10px FontAwesome;
 }
+.bicon {
+    position: relative;
+    top: 1px;
+    font: 14px FontAwesome5BrandsRegular;
+}
 .ricon {
     position: relative;
     top: 1px;

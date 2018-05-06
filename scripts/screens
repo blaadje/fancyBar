@@ -1,12 +1,10 @@
+#!/bin/bash
+
 chunkc=/usr/local/bin/chunkc
+spaces=/usr/local/bin/DisplaySpaces
 
-sleep 0.05
-active=$($chunkc tiling::query -d id)
-sleep 0.05
-total=$($chunkc tiling::query -D 1 | tail -c 1)
-sleep 0.05
-current=$($chunkc tiling::query --window name)
-sleep 0.05
-mode=$($chunkc tilin::query-d mode)
+sleep 2.00
+mode=$($chunkc tiling::query -d mode)
+spacesout=$($spaces)
 
-echo "$mode@$total@$active@$current"
+echo "$mode@${spacesout: -1}@${spaceout:-3:1}@$(sh ./scripts/activeWindow.sh)"
