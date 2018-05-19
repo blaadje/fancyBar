@@ -13,9 +13,16 @@ style: """
   left: 10px
   top: 5px
   width:850px
+  overflow: hidden;
   cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 """
 
+# To add new apps, just make a new if statement. For Font Awesome brand icons
+# use 'bicon' as the span class, for regular icons use 'ricon', and
+# solid icons use 'icon'
+#
 getAppIcon: (app) ->
 
     app = app.replace /^\s+/g, ""
@@ -29,14 +36,22 @@ getAppIcon: (app) ->
         return "<span class='icon'></span>"
     if app == 'bear'
         return "<span class='icon'></span>"
+    if app == 'fantastical 2'
+        return "<span class='icon'></span>"
     if app == 'iterm2'
         return "<span class='icon'></span>"
     if app == '1password'
         return "<span class='icon'></span>"
+    if app == 'finder'
+        return "<span class='icon'></span>"
+    if app == 'transmission'
+        return "<span class='icon'></span>"
     if app == 'system preferences'
         return "<span class='icon'></span>"
     if app == 'pcalc'
         return "<span class='icon'></span>"
+    if app == ''
+        return "<span class='ricon'></span><span class='white'> …</span>"
     if app == 'spotify'
         return "<span class='bicon'>&nbsp</span><span> spotify</span>"
     else
@@ -109,6 +124,7 @@ update: (output, domEl) ->
                                  "<span class='tilingMode white'>[#{mode}]" +
                                  "<span class='cyan'> ⎢ </span></span>" +
                                  screenhtml +
+                                 "<span>&nbsp&nbsp&nbsp&nbsp&nbsp</span>" +
                                  "<span>&nbsp&nbsp&nbsp&nbsp&nbsp</span>" +
                                  @getAppIcon(app) +
                                  @trimWindowName(title))

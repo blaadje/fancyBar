@@ -1,6 +1,6 @@
 table, span {
     color: #cb4b16;
-    font: 12px SFMono-Medium;
+    font: 12px FiraCode-Regular;
     text-transform: lowercase;
     -webkit-font-smoothing: antialiased;
 }
@@ -13,6 +13,7 @@ table, span {
 
 .background {
     background-color: #fdf6e3;
+    background: #fdf6e3;
 }
 
 .red {

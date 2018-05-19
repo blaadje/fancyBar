@@ -13,13 +13,13 @@ style: """
   color: #66d9ef
   font: 12px Hack
   left: 8px
-  bottom: 12px
+  bottom: 13px
   width:850px
   height: 16px
   cursor: pointer;
   .torrentStatus
     position: relative
-    bottom: 17px
+    bottom: 18px
 """
 
 cutWhiteSpace: (text) ->

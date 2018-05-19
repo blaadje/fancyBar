@@ -1,7 +1,7 @@
 refreshFrequency: false
 
 render: (output) ->
-  ""
+  "<span class='background'></span>"
 
 style: """
   background-color: #fdf6e3;
