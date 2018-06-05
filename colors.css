@@ -1,6 +1,6 @@
 table, span {
-    color: #cb4b16;
-    font: 12px FiraCode-Regular;
+    color: #003541;
+    font: 12px SFMono-Medium;
     text-transform: lowercase;
     -webkit-font-smoothing: antialiased;
 }
@@ -107,7 +107,7 @@ table, span {
 }
 
 .battery {
-    color: #7B8787;
+    color: #003541;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {

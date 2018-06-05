@@ -34,20 +34,22 @@ batteryStatus: (battery, state) ->
   batnum = parseInt(battery)
   if state == 'AC' and batnum >= 90
     return "<span class='charging battery sicon'></span><span class='green icon '></span><span class='white'>#{batnum}%</span>"
-  else if state == 'AC' and batnum >= 50 and batnum < 90
-    return "<span class='charging battery icon'></span><span class='green icon'></span><span class='white'>#{batnum}%</span>"
+  else if state == 'AC' and batnum >= 75 and batnum < 90
+    return "<span class='charging battery icon'></span><span class='green icon'></span><span class='white'>#{batnum}%</span>"
+  else if state == 'AC' and batnum < 75 and batnum >= 50
+    return "<span class='charging battery icon'></span><span class='yellow icon'></span><span class='white'>#{batnum}%</span>"
   else if state == 'AC' and batnum < 50 and batnum >= 15
-    return "<span class='charging battery icon'></span><span class='yellow icon'></span><span class='white'>#{batnum}%</span>"
+    return "<span class='charging battery icon'></span><span class='orange icon'></span><span class='white'>#{batnum}%</span>"
   else if state == 'AC' and batnum < 15
     return "<span class='charging battery icon'></span><span class='red icon'></span><span class='white'>#{batnum}%</span>"
   else if batnum >= 90
     return "<span class='green icon'>&nbsp</span><span class='white'>#{batnum}%</span>"
-  else if batnum >= 50 and batnum < 90
+  else if batnum >= 75 and batnum < 90
     return "<span class='green icon'>&nbsp</span><span class='white'>#{batnum}%</span>"
-  else if batnum < 50 and batnum >= 25
+  else if batnum >= 50 and batnum < 75
     return "<span class='yellow icon'>&nbsp</span><span class='white'>#{batnum}%</span>"
-  else if batnum < 25 and batnum >= 15
-    return "<span class='yellow icon'>&nbsp</span><span class='white'>#{batnum}%</span>"
+  else if batnum < 50 and batnum >= 15
+    return "<span class='orange icon'>&nbsp</span><span class='white'>#{batnum}%</span>"
   else if batnum < 15
     return "<span class='red icon'>&nbsp</span><span class='white'>#{batnum}%</span>"
 
