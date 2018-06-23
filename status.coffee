@@ -35,7 +35,7 @@ batteryStatus: (battery, state) ->
   if state == 'AC' and batnum >= 90
     return "<span class='charging battery sicon'></span><span class='green icon '></span><span class='white'>#{batnum}%</span>"
   else if state == 'AC' and batnum >= 75 and batnum < 90
-    return "<span class='charging battery icon'></span><span class='green icon'></span><span class='white'>#{batnum}%</span>"
+    return "<span class='charging battery icon'></span><span class='green icon'></span><span class='white'>#{batnum}%</span>"
   else if state == 'AC' and batnum < 75 and batnum >= 50
     return "<span class='charging battery icon'></span><span class='yellow icon'></span><span class='white'>#{batnum}%</span>"
   else if state == 'AC' and batnum < 50 and batnum >= 15
