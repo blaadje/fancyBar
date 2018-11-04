@@ -39,8 +39,9 @@ const getWifiStatus = ({ netStatus, netName }) => {
     'Wi-Fi': '',
     'USB 10/100/1000 LAN': '',
     'Apple USB Ethernet Adapter': '',
-    none: ''
+    none: ''
   }
+  netName = netName === 'none' ? 'Not connected' : netName
 
   return (
     <div style={statusWifi}>
@@ -71,7 +72,7 @@ const render = (props) => {
     state: values[3]
   }
   const wifiInfos = {
-    netStatus: values[4],
+    netStatus: values[4].split(' ')[1],
     netName: values[5]
   }
   

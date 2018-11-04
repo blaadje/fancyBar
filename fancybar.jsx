@@ -19,7 +19,7 @@ const backgroundStyle = {
   boxShadow: '-5px 5px 5px 0px rgba(0,0,0,0.3)',
 }
 
-export const command = "sh chunkbar.widget/scripts/screens && sh chunkbar.widget/scripts/status.sh"
+export const command = "sh fancybar.widget/scripts/screens && sh fancybar.widget/scripts/status.sh"
 
 export const render = (props) => {
   const output = props.output.split('\n')

@@ -17,7 +17,7 @@ This plugin is written in `.jsx`
 ## Installation
 
 ```bash
-https://github.com/blaadje/fancyBar.git $HOME/Library/Application\ Support/Übersicht/widgets/chunkbar.widget
+git clone https://github.com/blaadje/fancyBar.git $HOME/Library/Application\ Support/Übersicht/widgets/fancybar.widget
 ```
 
 or to your current widget directory if you have changed it. The scripts may require installing some additional packages, such as Python, but all are available via homebrew.
