@@ -69,7 +69,7 @@ const render = (props) => {
   }
   const batteryInfos = {
     amount: values[2],
-    state: values[3]
+    state: values[3].split(' ')[1],
   }
   const wifiInfos = {
     netStatus: values[4].split(' ')[1],
