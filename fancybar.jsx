@@ -27,7 +27,7 @@ export const render = (props) => {
   return (
     <div style={backgroundStyle}>
       <Workspaces output={output[0]} />
-      <Status output={output[1]} />
+      {/* <Status output={output[1]} /> */}
     </div>
   )
 }
